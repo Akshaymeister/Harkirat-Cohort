@@ -9,5 +9,8 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+  beforeTime = new Date.getTime();
+  for (let i = 0; i < n; i++) {}
+  afterTime = new Date.getTime();
+  return afterTime - beforeTime;
 }
